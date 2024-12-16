@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>p7-2</title>
+		<style>
+			#box{
+				height: 100px;
+				width: 100px;
+				background-color: brown;
+				border: 2px solid;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<div>
+				<button id="fadein">Fade-In</button>
+				<button id="faceout">Fade-Out</button>
+				<button id="fadetoggle">Fade-Toggle</button>
+				<button id="fadeto">Fade-To</button>
+			</div><br>
+			<div id="box"></div>
+		</center>
+		<script  src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#fadein").click(function(){
+					$("#box").fadeIn(500,function(){
+						console.log("Fade-In");
+					})
+				})
+
+				$("#faceout").click(function(){
+					$("#box").fadeOut(500,function(){
+						console.log("Fade-Out");
+					})
+				})
+
+				$("#fadetoggle").click(function(){
+					$("#box").fadeToggle(500,function(){
+						console.log("Fade-Toggle");
+					})
+				})
+
+				$("#fadeto").click(function(){
+					$("#box").fadeTo(500,0.5,function(){
+						console.log("Fade-To");
+					})
+				})
+			})
+		</script>
+	</body>
+</html>

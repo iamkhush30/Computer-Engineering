@@ -1,0 +1,96 @@
+
+body{
+	color: white;
+	background-color: white;
+	background-image: url(9.jpeg);
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	background-attachment: fixed;
+}	
+
+.heading{
+	font-size: 75px;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	background-color: white;
+	color: black;
+	border-radius: 10px;
+	border: 7px solid black;
+}
+.logo{
+	width: 150px;
+	height: 70px;
+	text-align: left;
+	position: absolute;
+	left: 30px;
+	top: 35px;
+}
+.nav{
+	background-color: white;
+	border: 7px solid black;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+	position: static;
+
+}
+.nav a{
+	text-decoration: none;
+	position: static;
+	margin: 10px;
+	margin-left: 70px;
+	margin-right: 70px;
+	font-size: 25px;
+	color: black;
+	position: static;
+}
+.nav a:hover{
+	background-color: black;
+	margin-left: 60px;
+	margin-right: 60px;
+	box-shadow: 20 white;
+	color: white;
+	border-radius: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 10px;
+}
+img{
+	width: 350px;
+    height: 350px;
+}
+.sell{
+	border-radius: 10px;
+	margin: 10px;
+	padding: 5px;
+	background-color: white;
+	text-align: center;
+	border: 7px solid black;
+}
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	display: inline-block;
+}
+h4{
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+}
+.text-center{
+	text-align: center;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+}

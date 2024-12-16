@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 onmouseenter="coloryellow()" onmouseout="colorblack()" id="header">Hello</h1>
+
+        <br><br>
+
+        <button onclick="bgred()">Red</button>
+        <button onclick="bggreen()">Green</button>
+    </center>
+    <script>
+        var header = document.getElementById("header");
+
+        function coloryellow()
+        {
+            header.style.color = "yellow    ";
+        }
+        function colorblack()
+        {
+            header.style.color = "black";
+        }
+
+        function bgred()
+        {
+            document.body.style.backgroundColor = "red";
+        }
+
+        function bggreen()
+        {
+            document.body.style.backgroundColor = "green";
+        }
+    </script>
+</body>
+</html>

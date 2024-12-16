@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <center>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>Enrollment No.</td>
+                        <td><input type="number" name="" id="enroll"></td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Branch</td>
+                        <td><input type="text" id="branch"></td>
+                    </tr>
+                    <tr>
+                        <td>Sem</td>
+                        <td><input type="number" id="sem"></td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+        
+        <script>
+            var box = document.getElementById("box");
+            function changeColor()
+            {
+                document.body.style.background=box.value;
+            }
+        </script>
+    </body>
+</html>

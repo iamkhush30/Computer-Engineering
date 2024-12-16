@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Mouse Event : <span id="log"></span></p>
+    <script>
+        let body = document.getElementsByTagName("body");
+
+        body[0].addEventListener("click", (e) => {
+            switch(e.button){
+                case 0:
+                    document.getElementById("log").innerHTML = "Left Click";
+                    break;
+                
+                case 1:
+                    document.getElementById("log").innerHTML = "Middle Click";
+                    break;
+                
+                case 2:
+                    document.getElementById("log").innerHTML = "Rigth Click";
+                    break;
+            }
+            
+        });
+    </script>
+</body>
+</html>

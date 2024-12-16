@@ -1,0 +1,29 @@
+<html>
+    <head><title>d-3</title></head>
+    <body>
+        <script type="text/javascript">
+        function validate()
+        {
+            var Email=document.getElementById('email').value;
+            var regx=/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$/;
+            if(regx.test(Email))
+            {
+                document.getElementById('email').style.backgroundColor='lightgreen';
+                document.getElementById('lemail').style.visibility="hidden";
+            }
+            else
+            {
+                document.getElementById('email').style.backgroundColor='red';
+                document.getElementById('lemail').style.visibility='visible';
+                document.getElementById('lemail').innerHTML='Invalid Email'; 
+            }
+        }
+        </script>
+        <center>
+            <form>
+                Email:<input type="text" id="email" onkeyup="validate()"><br>
+                <label id="lemail" style="color: indianred; visibility: hidden;"></label>
+            </form>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a {
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            transition: 500ms;
+            animation: mymove 10s infinite;
+        }
+        @keyframes mymove {
+            0% {
+                top: 0px;
+                left: 0px;
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(-90deg);
+                top: 0px;
+                left: 90%;
+            }
+
+            50% {
+                top: 75vh;
+                left: 90%;
+                transform: rotate(-180deg);
+            }
+
+            75% {
+                top: 75vh;
+                left: 0px;
+                transform: rotate(-270deg);
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a"></div>
+</body>
+
+</html>

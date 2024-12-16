@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <center>
+        <div id="box">Hello!</div>
+
+        <p id="event"></p>
+    </center>
+
+    <script>
+        $(document).ready(function(){
+            $('#box').click(function(){
+                $('#event').text("Clicked")
+            })
+            $('#box').dblclick(function(){
+                $('#event').text("DBlclick")
+            })
+            $('#box').mouseenter(function(){
+                $('#event').text("Mouse Enter")
+            })
+            $('#box').mouseleave(function(){
+                $('#event').text("Mouse Leave")
+            })
+        })
+    </script>
+</body>
+</html>

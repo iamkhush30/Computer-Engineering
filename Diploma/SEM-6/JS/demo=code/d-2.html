@@ -1,0 +1,29 @@
+<html>
+    <head><title>d-2</title></head>
+    <body>
+        <script type="text/javascript">
+        function validate()
+        {
+            var ContactNo=document.getElementById('Cno').value;
+            var regx=/^[0-9]{10}$/;
+            if(regx.test(ContactNo))
+            {
+                document.getElementById('Cno').style.backgroundColor='lightgreen';
+                document.getElementById('lcontactno').style.visibility="hidden";
+            }
+            else
+            {
+                document.getElementById('Cno').style.backgroundColor='red';
+                document.getElementById('lcontactno').style.visibility='visible';
+                document.getElementById('lcontactno').innerHTML='Invalid ContactNo'; 
+            }
+        }
+        </script>
+        <center>
+            <form>
+                ContactNo:<input type="text" id="Cno" onkeyup="validate()"><br>
+                <label id="lcontactno" style="color: indianred; visibility: hidden;"></label>
+            </form>
+        </center>
+    </body>
+</html>

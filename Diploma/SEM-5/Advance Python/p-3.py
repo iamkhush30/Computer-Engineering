@@ -1,0 +1,12 @@
+print("Enter a:")
+a = int(input())
+print("Enter b:")
+b = int(input())
+print("Ans = ",a+b)
+
+x= int(10)
+y= int(2)
+print("Add = ",x+y)
+print("Sub = ",x-y)
+print("Mul = ",x*y)
+print("Div = ",x//y)

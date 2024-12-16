@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>p5-4</title>
+	</head>
+	<body>
+		<center>
+			<div id="d1">
+				<h1>Hello World</h1>
+			</div>
+		</center>
+		
+		<script type="text/javascript">
+
+			var mouse = document.getElementById("d1");
+
+			mouse.addEventListener("click", MouseOut1);
+			mouse.addEventListener("dblclick", MouseOut1);
+			mouse.addEventListener("mouseout", MouseOut1);
+			mouse.addEventListener("mouseover", MouseOut1);
+			
+			function MouseOut1(event)
+			{
+				console.log(event.type);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>p4-2</title>
+		<style>
+    		input {
+        		border-radius: 7px;=
+    		}
+    		select {
+        		border-radius: 7px;
+    		}
+		</style>
+	</head>
+
+	<body>
+
+		<script type="text/javascript">
+			function sum()
+			{
+				var a = parseInt(document.getElementById('a').value);
+            	var b= parseInt(document.getElementById('b').value);
+            	var operation= document.getElementById('operation').value;
+            	if (operation=="+")
+            		var ans = a + b;
+
+            	else if (operation=="-")
+            		var ans = a - b;
+            	
+            	else if (operation=="x")
+            		var ans = a * b;
+            	
+            	else if (operation=="/")
+            		var ans = a / b;
+                document.getElementById('ans').value=ans; 
+			}
+		</script>
+
+		<center>
+			<form>
+				<input type="number" id="a" >
+				<select id="operation">
+					<option value="+">+</option>
+					<option value="-">-</option>
+					<option value="x">x</option>
+					<option value="/">/</option>
+				</select>
+				<input type="number" id="b">
+				<input type="button" value="=" onclick="sum()">
+				<input type="text" id="ans">
+			</form>
+		</center>
+
+	</body>
+
+</html>

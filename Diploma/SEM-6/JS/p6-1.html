@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>p6-1</title>
+	</head>
+	<body>
+		<center>
+			<form>
+				<label for="bdate">Enter Birthdate:</label>
+				<input type="date" id="bdate" value="Date and Time"><br><br>
+				<input type="button" value="Calculate" id="cal" required><br><br>
+				<p id="ans"></p>		
+			</form>
+		</center>
+		<script  src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){
+				$("#cal").click(function(){
+					var bdate = new Date($("#bdate").val());
+					var today = new Date();
+					
+					bdate.setFullYear(today.getFullYear());
+
+					if(today>bdate){
+						bdate.setFullYear(today.getFullYear()+1);
+					}
+
+					var ans = Math.round((bdate - today)/(1000*60*60*24));
+					$("#ans").text(ans+" Days left till next BirthDay");
+				})
+			})
+		</script>
+	</body>
+</html>

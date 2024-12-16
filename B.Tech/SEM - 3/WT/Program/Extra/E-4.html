@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>p4-3</title>
+		<style>
+			table{
+				padding: 10px;
+				border-radius: 20px;
+				background-color: grey;
+			}
+			input[type=button]{
+				width: 40px;
+				border-radius: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function addchar(n)
+        	{
+            	 document.getElementById('ms').value += n ;       
+         	}
+
+         	function clearall()
+         	{
+         	   document.getElementById('ms').value = '';
+         	}
+
+         	function clearone()
+         	{
+         	   document.getElementById('ms').value = document.getElementById('ms').value.slice(0, -1);;
+         	}
+
+       		function cal()
+       		{
+        		try
+        		{
+                 	document.getElementById('ms').value = eval(document.getElementById('ms').value);
+        		}
+        		catch(error)
+        		{
+            		document.getElementById('ms').value = "Error";
+        		}
+       		}
+		</script>
+		<center>
+			<form>
+				<table>
+					<tr align="center">
+						<td colspan="4"><input type="text" id="ms"></td>
+					</tr>
+					<tr align="center">
+						<td colspan="2">
+							<input type="button" value="AC" onclick="clearall()">
+						</td>
+						<td colspan="2">
+							<input type="button" value="CA" onclick="clearone()">
+						</td>
+					</tr>
+					<tr align="center">
+						<td><input type="button" value="7" onclick="addchar('7')"></td>
+						<td><input type="button" value="8" onclick="addchar('8')"></td>
+						<td><input type="button" value="9" onclick="addchar('9')"></td>
+						<td><input type="button" value="/" onclick="addchar('/')"></td>
+					</tr>
+					<tr align="center">
+						<td><input type="button" value="4" onclick="addchar('4')"></td>
+						<td><input type="button" value="5" onclick="addchar('5')"></td>
+						<td><input type="button" value="6" onclick="addchar('6')"></td>
+						<td><input type="button" value="x" onclick="addchar('*')"></td>
+					</tr>
+					<tr align="center">
+						<td><input type="button" value="1" onclick="addchar('1')"></td>
+						<td><input type="button" value="2" onclick="addchar('2')"></td>
+						<td><input type="button" value="3" onclick="addchar('3')"></td>
+						<td><input type="button" value="-" onclick="addchar('-')"></td>
+					</tr>
+					<tr align="center">
+						<td><input type="button" value="0" onclick="addchar('0')"></td>
+						<td><input type="button" value="=" onclick="cal()"></td>
+						<td><input type="button" value="%" onclick="addchar('%')"></td>
+						<td><input type="button" value="+" onclick="addchar('+')"></td>
+					</tr>
+				</table>				
+			</form>
+		</center>
+	</body>
+</html>

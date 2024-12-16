@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = parseInt(prompt("Enter A:"))
+        var b = parseInt(prompt("Enter B:"))
+        var c = parseInt(prompt("Enter C:"))
+
+        if(a>b && a>c) 
+            console.log(a+" is max")
+        else if(b>c)
+            console.log(b+" is max")
+        else
+            console.log(c+" is max")
+
+        a > b? 
+        (a > c ? 
+            console.log(a+" is max") : 
+            console.log(c+" is max")) : 
+        (b > c ? 
+            console.log(b+" is max") : 
+            console.log(c+" is max"))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

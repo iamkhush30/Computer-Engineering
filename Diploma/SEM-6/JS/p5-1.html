@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>p5-1</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function colorChange()
+			{
+				var r = Math.ceil(Math.random()*255);
+				var g = Math.ceil(Math.random()*255);
+				var b = Math.ceil(Math.random()*255);
+				document.body.style.backgroundColor="rgb("+r+","+g+","+b+")";
+			}
+		</script>
+		<center>
+			<form>
+				<input type="button" value="Color Change" onclick="colorChange()">			
+			</form>
+		</center>
+	</body>
+</html>

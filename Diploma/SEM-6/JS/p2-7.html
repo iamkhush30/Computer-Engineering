@@ -1,0 +1,27 @@
+<html>
+
+	<head><title>P2-7</title></head>
+
+	<body>
+		<center>
+			<script type="text/javascript">
+				let x = parseInt(prompt("Enter Number:"));
+				let temp = x, rem = 0, sum = 0;
+
+				while(x!=0)
+				{
+					rem = x % 10;
+					sum = sum + (rem * rem * rem);
+					x = parseInt(x / 10);
+				}
+
+				if (sum==temp)
+					document.write(temp+" is Armstrong");
+
+				else
+					document.write(temp+" is not Armstrong");
+			</script>
+		</center>
+	</body>
+
+</html>

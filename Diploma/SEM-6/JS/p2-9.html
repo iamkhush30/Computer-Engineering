@@ -1,0 +1,28 @@
+<html>
+
+    <head><title>P2-9</title></head>
+
+    <body>
+
+        <center>
+
+            <script type="text/javascript">
+                let a = prompt('Max Value: ');
+                let b = prompt('Min Value: ');
+                let gcd = b;
+
+                while (gcd > 0) 
+                {
+                    if (a % gcd == 0 && b % gcd == 0)
+                        break;
+                    gcd--;
+                }
+
+                document.write("GCD = "+gcd);
+            </script>
+
+        </center>
+
+    </body>
+
+</html>

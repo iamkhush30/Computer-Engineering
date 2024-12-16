@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <input type="text" id="box">
+        <input type="button" value="Insert" onclick="insert()">
+        <input type="button" value="Delete" onclick="deleteone()">
+        <br><br>
+        <p id="output"></p>
+    </center>
+    <script>
+        var a = [];
+        var box = document.getElementById("box");
+        var output = document.getElementById("output");
+        function insert()
+        {
+            a.push(box.value);
+            output.innerHTML = a;
+        }
+
+        function deleteone()
+        {
+            a.pop(box.value);
+            output.innerHTML = a;
+        }
+    </script>
+</body>
+</html>

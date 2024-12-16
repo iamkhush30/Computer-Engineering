@@ -1,0 +1,29 @@
+<html>
+    <head><title>d-1</title></head>
+    <body>
+        <script type="text/javascript">
+        function validate()
+        {
+            var UserName=document.getElementById('uname').value;
+            var regx=/^[a-zA-Z0-9]+[a-zA-Z0-9]$/;
+            if(regx.test(UserName))
+            {
+                document.getElementById('uname').style.backgroundColor='green';
+                document.getElementById('luser').style.visibility="hidden";
+            }
+            else
+            {
+                document.getElementById('uname').style.backgroundColor='red';
+                document.getElementById('luser').style.visibility='visible';
+                document.getElementById('luser').innerHTML='Invalid'; 
+            }
+        }
+        </script>
+        <center>
+            <form>
+                UserName:<input type="text" id="uname" onkeyup="validate()"><br>
+                <label id="luser" style="color: red; visibility: hidden;"></label>
+            </form>
+        </center>
+    </body>
+</html>

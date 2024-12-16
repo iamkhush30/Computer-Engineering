@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" id="box">
+        <p>Performed Event : <span id="x"></span></p>
+        
+        <script>
+            var box = document.getElementById("box");
+          
+            var eventName = document.getElementById("x");
+           
+            function updateEventName(event)
+            {
+                eventName.textContent = event.type;
+            }
+
+            box.addEventListener('keypress',updateEventName);
+            box.addEventListener('keydown',updateEventName);
+            box.addEventListener('keyup',updateEventName);
+        </script>
+    </body>
+</html>

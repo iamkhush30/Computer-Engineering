@@ -1,0 +1,59 @@
+Extra-8:
+
+"a great chef is a great technician" complete the program so that it will take a word as input & output the number of times that word appears in the quote.
+
+
+Extra-9:
+
+All the problem in amazon online shoping have their own id every id consists of 5 Symbols.
+
+1 -> A-Z
+2 -> a-z
+3 -> @
+4}-> digit 
+5}-> digit
+Write 9 prorgramm for 9 search tool,that will take the ID as input and output "Searching" if the format is current and "wrong format" if it's not.
+
+Extra-10:
+
+w.a.p to read entrie file named abc.txt.
+
+
+Extra-11:
+
+w.a.p to read first 5 lines from the filed named abc.txt.
+
+Extra-12:
+
+w.a.p to copy content of abc.txt to xyz.txt.
+
+Unit 2 Extra:-
+
+Extra-13:
+
+Create 3*3 matrix for the following:
+	1) Create a 3*3 matrix with values ranging from 0 to 8
+	2) Create a 3*3 identity matrix
+
+Extra-14:
+
+Use Numpy to genrate a random number between 0 and 1.
+
+Extra-15:
+
+ WAP to create an array of 5*5 of 26 to 50 integer values using reshape function.
+    1) Do array slicing to get an array from 2 row and 1 column.
+    2) Get a value whose position in row is 3 and column is 4
+    3) Write the output for array[:3, 1:2]
+    4) Write the output for array[-1]
+    5) Write the output for array[-2:]
+    6) Print the element of array which is divisible by 3 but not 5.
+
+Extra-16:
+w.a.p to create an which holds 25 integer values and perform the following:
+   1)split the array into 10 parts,2 parts,20 parts and 30 parts.
+   2)Get indices of an array whose value are even.
+   3)Get indices of an array whose value are odd.
+   4)Get integer number less than 15 from the array.
+
+

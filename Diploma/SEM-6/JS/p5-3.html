@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>p5-3</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function DateTime()
+			{
+				var currentdate = new Date();
+				var datetime = "Current Date: " 
+								+ currentdate.getDate() + "/" 
+								+ currentdate.getMonth() + "/" 
+								+ currentdate.getFullYear() + "   " 
+								+ currentdate.getHours() + ":" 
+								+ currentdate.getMinutes() + ":" 
+								+ currentdate.getSeconds();
+				document.getElementById('p').innerHTML=datetime;
+			}
+		</script>
+		<center>
+			<form>
+				<input type="button" value="Date and Time" onclick="DateTime()">
+				<p id="p"></p>		
+			</form>
+		</center>
+	</body>
+</html>

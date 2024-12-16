@@ -1,0 +1,122 @@
+<html>
+
+   <head>
+      <title>P4-1</title>
+      <style>
+         label{
+            color: red; 
+            visibility: hidden;
+         }
+      </style>
+   </head>
+
+   <body>
+      <center>
+          <script type="text/javascript">
+             function validate() 
+             {
+                var uName = document.getElementById('username');
+                var lUName = document.getElementById('luname');
+                var uNameRegx=/^[a-zA-Z0-9]/;
+
+                var contNo = document.getElementById('con');
+                var lContNo = document.getElementById('lcontno');
+                var contNoRegx=/^[0-9]{10}/;
+
+                var email = document.getElementById('email');
+                var lEmail = document.getElementById('lemail');
+                var emailRegx=/^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
+
+                var pass = document.getElementById('pass');
+                var lPass = document.getElementById('lpass');
+                var passRegx=/[a-zA-Z0-9]{8,}/;
+
+                if (uNameRegx.test(uName.value)) 
+                {
+                    uName.style.backgroundColor="lightgreen";
+                    lUName.style.visibility="hidden"
+                }
+
+                else
+                {
+                    uName.style.backgroundColor="red";
+                    lUName.style.visibility="visible";
+                }
+              
+                if (contNoRegx.test(contNo.value)) 
+                {
+                    contNo.style.backgroundColor="lightgreen";
+                    lContNo.style.visibility="hidden"
+                }
+      
+                else
+                {
+                    contNo.style.backgroundColor="red";
+                    lContNo.style.visibility="visible";
+                }
+
+                if (emailRegx.test(email.value)) 
+                {
+                    email.style.backgroundColor="lightgreen";
+                    lEmail.style.visibility="hidden"
+                }
+      
+                else
+                {
+                    email.style.backgroundColor="red";
+                    lEmail.style.visibility="visible";
+                }
+      
+                if (passRegx.test(pass.value)) 
+                {
+                    pass.style.backgroundColor="lightgreen";
+                    lPass.style.visibility="hidden"
+                }
+
+                else
+                {
+                    pass.style.backgroundColor="red";
+                    lPass.style.visibility="visible";
+                }
+            }
+
+        </script>
+      
+         <form>
+            <table>
+         
+                <tr>
+                    <td>User Name </td>
+                    <td><input type="text" id="username"></td>
+                    <td><label id="luname">Invalid User Name</label></td>
+                </tr>
+ 
+                <tr>
+                    <td> Contact No </td>
+                    <td><input type="text" id="con"></td>
+                    <td><label id="lcontno">Invalid Contact No </label></td>
+                </tr>
+
+                <tr>
+                    <td> Email </td>
+                    <td><input type="text" id="email"></td>
+                    <td><label id="lemail">Invalid Email Address</label></td>
+                </tr>
+      
+                <tr>
+                    <td> Password </td>
+                    <td><input type="password" id="pass"></td>
+                    <td><label id="lpass">Invalid Password </label></td>
+                </tr>
+      
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="Submit" onclick="validate()" >
+                    </td>
+                </tr>
+            </table>
+         </form>
+      </center>
+   </body>
+   
+</html>

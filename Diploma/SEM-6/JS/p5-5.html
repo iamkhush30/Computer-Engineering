@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>p5-5</title>
+	</head>
+	<body>
+		<center>
+			<form id="f1">
+				<input type="text" onkeydown="KeyEvent()" onkeypress="KeyEvent()" onkeyup="KeyEvent()">	
+			</form>
+		</center>
+		<script type="text/javascript">
+			var key = document.getElementById("f1");
+
+			key.addEventListener("KeyDown", KeyEvent);
+			key.addEventListener("KeyPress", KeyEvent);
+			key.addEventListener("KeyUp", KeyEvent);
+			function KeyEvent()
+			{
+				console.log(event.type);
+			}
+		</script>
+	</body>
+</html>

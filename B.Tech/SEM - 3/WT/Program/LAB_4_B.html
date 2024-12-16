@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+     </head>
+     <body>
+          <center>
+               <form action="">
+                    <h1>COVID-19 vaccine Registration Form</h1>
+                    <table cellpadding="10">
+                         <tr>
+                              <td><label for="Fname">First Name</label></td>
+                              <td><input type="text" name="Fname" id="fname"></td>
+                         </tr>
+                         <tr>
+                              <td><label for="Lname">Last Name</label></td>
+                              <td><input type="text" name="Lname" id="lname"></td>
+                         </tr>
+                         <tr>
+                              <td><label for="Adhar_no">Adhar Number</label></td>
+                              <td><input type="number" name="Adhar_no" id="adhar_no" maxlength="12"></td>
+                         </tr>
+                         <tr>
+                              <td><label for="Vname">Vaccine Name</label></td>
+                              <td>
+                                   <select name="Vname" id="vname">
+                                        <option value="Default" selected disabled>Select Vaccine Name</option>
+                                        <option value="Covishild">Covishild</option>
+                                        <option value="Covaxin">Covaxin</option>
+                                   </select>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td><label for="Vcenter_name">Vaccination Center Name</label></td>
+                              <td>
+                                   <select name="Vcenter_name" id="vcenter_name">
+                                        <option value="Default" selected disabled>Select Vaccination Center Name</option>
+                                        <option value="ABC">ABC</option>
+                                        <option value="DEF">DEF</option>
+                                        <option value="GHI">GHI</option>
+                                   </select>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td><label for="DOD">Date of Dose</label></td>
+                              <td><input type="date" name="DOD" id="dod"></td>
+                         </tr>
+                         <tr>
+                              <td><label for="Dose_no">Dose Number</label></td>
+                              <td><input type="number" name="Dose_no" id="Dose_no" max="3"></td>
+                         </tr>
+                         <tr>
+                              <td colspan="2" align="center">
+                                   <input type="button" id="btn" value="Click Here">
+                                   <input type="button" id="btn" value="Cancel">
+                              </td>
+                         </tr>
+                    </table>
+               </form>
+          </center>
+     </body>
+</html>

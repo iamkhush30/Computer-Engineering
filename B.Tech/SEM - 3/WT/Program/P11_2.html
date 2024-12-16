@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form action="">
+            <label for="">UserName:</label>
+            <input type="text" name="" id="uname">
+            <br>
+            <br>
+            <label for="">Password:</label>
+            <input type="text" name="" id="password">
+            <br>
+            <br>
+            <button id="submit" onclick="check()">Submit</button>
+            <br>
+            <br>
+            <p id="result"></p>
+        </form>
+    </center>
+    <script>
+        function check()
+        {
+            var uname = "admin"
+            var pass = "123"
+
+            var inputumane = document.getElementById("uname").value;
+            var inputpassword = document.getElementById("password").value;
+            
+            if(uname === inputumane && pass === inputpassword)
+                alert("correct")
+            
+            else
+                alert("incorrect")
+        }
+    </script>
+</body>
+</html>

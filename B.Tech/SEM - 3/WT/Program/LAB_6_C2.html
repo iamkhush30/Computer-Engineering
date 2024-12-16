@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #a{
+            position: relative;
+            height: 125px;
+            width: 300px;
+            background-color: black;
+            color: white;
+            border: 3px solid white;
+            font-size: 100px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            animation: mymove 50s infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes mymove {
+            0% {
+                top: 0vh;
+                left: 0%;
+            }
+
+            10%{
+                top: 80vh;
+                left: 25%;
+            }
+
+            20%{
+                top: 45vh;
+                left: 80%;
+            }
+
+            30%{
+                top: 0vh;
+                left: 60%;
+            }
+
+            40%{
+                top: 65vh;
+                left: 0%;
+            }
+
+            50%{
+                top: 80vh;
+                left: 60%;
+            }
+
+            60%{
+                top: 30vh;
+                left: 80%;
+            }
+
+            70%{
+                top: 0vh;
+                left: 75%;
+            }
+
+            80%{
+                top: 75vh;
+                left: 0%;
+            }
+
+            90%{
+                top: 8vh;
+                left: 30vh;
+            }
+            100%{
+                top: 0vh;
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a">DVD</div>
+</body>
+
+</html>

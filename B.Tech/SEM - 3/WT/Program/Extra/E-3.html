@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var n = parseInt(prompt("Enter N:"))
+
+        var flag = true;
+        var i=1;
+
+        while(flag)
+        {
+            var cronicNum = i*(i+1);
+            if(cronicNum>n)
+            {
+                console.log(cronicNum+" is not cronic number");
+                flag=false;
+            }
+            else if(cronicNum==n)
+            {
+                console.log(cronicNum+" is cronic number");
+                flag=false;
+            }
+            else
+            {
+               i++;
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

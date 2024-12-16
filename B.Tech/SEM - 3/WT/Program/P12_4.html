@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <center>
+            <form id="form">
+                <input type="text" id="box">
+                <input type="submit"id="submit">
+            </form>
+            <p>Performed Event : <span id="x"></span></p>
+        </center>
+        
+        <script>
+            var form = document.getElementById("form");
+
+            var box = document.getElementById("box");
+          
+            var eventName = document.getElementById("x");
+           
+            function updateEventName(event)
+            {
+                eventName.textContent = event.type;
+            }
+
+            form.addEventListener('change', updateEventName);
+            box.addEventListener('blur',updateEventName);
+            box.addEventListener('focus',updateEventName);
+            form.addEventListener('input',updateEventName);
+            form.addEventListener('submit',(event)=>{
+                event.preventDefault();
+                updateEventName(event);
+            })
+        </script>
+    </body>
+</html>

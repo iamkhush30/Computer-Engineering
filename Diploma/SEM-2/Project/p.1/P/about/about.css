@@ -1,0 +1,116 @@
+body {
+  	background-image: url(9.jpeg);
+	  background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	background-attachment: fixed; 
+}
+
+.heading{
+	font-size: 75px;
+	text-align: center;
+	margin: 8px;
+	padding: 8px;
+	background-color: white;
+	color: black;
+	border-radius: 10px;
+	border: 5px solid black;
+	margin-bottom: 2px;
+}	
+.logo{
+  width: 150px;
+  height: 70px;
+  text-align: left;
+  position: absolute;
+  left: 30px;
+  top: 35px;
+}
+.nav{
+  background-color: white;
+  border: 7px solid;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  position: static;
+
+}
+.nav a{
+  text-decoration: none;
+  position: static;
+  margin: 70px;
+  font-size: 25px;
+  color: black;
+  position: static;
+}
+.nav a:hover{
+  background-color: black;
+  margin: 60px;
+  box-shadow: 20 white;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  margin-bottom: 16px;
+  padding: 10 8px;
+  margin-left: 150px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(1	, 1, 1, 1);
+  margin: 8px;
+  padding: 20px;
+  background-color: white;
+  border: 5px solid black;
+}
+.card:hover{
+	background-color: black;
+	border: 5px solid white;
+	color: white;
+}
+
+.main{
+  background-color: white;
+  color: black;
+  border: 5px solid black;
+  margin: 10px;
+  border-radius: 10px;
+}
+.about-section h2{
+  text-align: center;
+}
+.about-section {
+  padding: 50px;
+  text-align: justify;
+  font-size: 25px;
+}
+.about-section p{
+	padding: 25px;
+}
+
+.container {
+  padding: 0 16px;
+  margin: 10px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.a{
+	font-size: 18px;
+	text-decoration: none;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}

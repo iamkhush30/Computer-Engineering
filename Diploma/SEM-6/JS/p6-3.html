@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>p6-3</title>
+	</head>
+	<body>
+		<center>
+			<h1>Callback Function</h1>
+			<h2 id="ans"></h2>
+		</center>
+		<script  src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				function printAddition(ans) {
+					$("#ans").text(ans)
+				}
+				function addTwoNum(a,b,printAddition){
+					var ans = a+b;
+					printAddition(ans);
+				}
+				addTwoNum(10,20,printAddition)
+			})
+		</script>
+	</body>
+</html>

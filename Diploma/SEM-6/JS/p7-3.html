@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>p7-3</title>
+		<style>
+			#boxlist{
+				height: 100px;
+				width: 100px;
+				background-color: brown;
+				border: 2px solid;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<div>
+				<button id="add">Add</button>
+				<button id="remove">Remove</button>
+			</div><br>
+			<div id="box"></div>
+		</center>
+		<script  src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#add").click(function(){
+					$("#box").append(
+						'<div id="boxlist"></div>'
+					)
+				})
+
+				$("#remove").click(function(){
+					$("#boxlist:last").remove()
+				})
+			})
+		</script>
+	</body>
+</html>

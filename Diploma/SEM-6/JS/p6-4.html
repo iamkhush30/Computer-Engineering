@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>p6-4</title>
+	</head>
+	<body>
+		<center>
+			<div id="div">
+				<button id="button">Change Property</button>
+			</div>
+		</center>
+		<script  src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#button").click(function(){
+					$("div").css({
+						'background-color':'peachpuff',
+						'border' : '2px solid'
+					})
+					$("#value").text("XYZ")
+				})
+			})
+		</script>
+	</body>
+</html>

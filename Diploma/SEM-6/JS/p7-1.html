@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>p7-1</title>
+	</head>
+	<body>
+		<center>
+			<form>
+				<input type="number" id="a">
+
+				<select id="operation">
+					<option value="+">+</option>
+					<option value="-">-</option>
+					<option value="x">x</option>
+					<option value="/">/</option>
+				</select>
+
+				<input type="number" id="b">
+
+				<input type="button" value="=" id="btn">
+
+				<h1 id="ans"></h1>
+				
+			</form>
+		</center>
+		<script  src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#btn").click(function(){
+					var a = parseInt($("#a").val())
+					var b = parseInt($("#b").val())
+					var operation = $("#operation").val()
+
+					if (operation=="+")
+            			$("#ans").text(a + b);
+
+            		else if (operation=="-")
+            			$("#ans").text(a - b);
+            	
+            		else if (operation=="x")
+            			$("#ans").text(a * b);
+            	
+            		else if (operation=="/")
+            			$("#ans").text(a / b);
+				})
+			})
+		</script>
+	</body>
+</html>

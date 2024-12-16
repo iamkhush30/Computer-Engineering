@@ -1,0 +1,28 @@
+<html>
+
+	<head><title>P3-4</title></head>
+	
+	<body>
+		<center>
+			<script type="text/javascript">
+				var n = [];
+				let a = parseInt(prompt("Enter size of Array:"));
+				for (var i = 0; i < a; i++) 
+				{
+					n.push(prompt("Enter Value:"));
+					for(var j = 0 ; j < i ;j++)
+					{
+						if (n[i] < n[j])
+						{
+							var sum = n[i];
+							n[i] = n[j];
+							n[j] = sum
+						}
+					}	
+				}
+				document.write("Shorted Array = "+n);
+			</script>
+		</center>
+	</body>
+
+</html>

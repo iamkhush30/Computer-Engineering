@@ -1,0 +1,46 @@
+<html>
+    <head><title>d-3</title></head>
+    <body>
+        <script type="text/javascript">
+        function validate()
+        {
+            var Password = document.getElementById('password').value;
+            var CPassword = document.getElementById('cpassword').value;
+            var regx=/^[a-zA-Z0-9]{8,}$/;
+
+            if(regx.test(Password))
+            {
+                document.getElementById('password').style.backgroundColor='lightgreen';
+                document.getElementById('lpassword').style.visibility="hidden";
+
+                if (Password == CPassword)
+                {
+                    document.getElementById('cpassword').style.backgroundColor='lightgreen';
+                    document.getElementById('lcpassword').style.visibility="hidden";
+                }
+                else
+                {
+                    document.getElementById('cpassword').style.backgroundColor='red';
+                    document.getElementById('lcpassword').style.visibility='visible';
+                    document.getElementById('lcpassword').innerHTML='Invalid confirm Password';
+                }
+            }
+            else
+            {
+                document.getElementById('password').style.backgroundColor='red';
+                document.getElementById('lpassword').style.visibility='visible';
+                document.getElementById('lpassword').innerHTML='Invalid Password'; 
+            }
+        }
+        </script>
+        <center>
+            <form style="border: 2px solid black;">
+                Password:<input type="text" id="password" onkeyup="validate()"><br>
+                <label id="lpassword" style="color: indianred; visibility: hidden;"></label><br>
+
+                Con Password:<input type="text" id="cpassword" onkeyup="validate()"><br>
+                <label id="lcpassword" style="color: indianred; visibility: hidden;"></label>
+            </form>
+        </center>
+    </body>
+</html>

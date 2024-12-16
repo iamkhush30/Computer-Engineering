@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>p6-2</title>
+	</head>
+	<body>
+		<center>
+			<div id="time">
+				<h1>Show Greetign</h1>
+				<h2 id="greet"></h2>
+			</div>
+		</center>
+		<script  src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){
+				$("#time").click(function(){
+					var time = new Date().getHours();
+					if (time>=5 && time<12){
+						$("#greet").text("Good Morning");
+					}
+					else if (time>=12 && time<17){
+						$("#greet").text("Good Afternoon");	
+					}
+					else {
+						$("#greet").text("Good Night");	
+					}
+				})
+			})
+		</script>
+	</body>
+</html>
